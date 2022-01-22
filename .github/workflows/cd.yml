@@ -19,7 +19,7 @@ jobs:
 
       - name: Build Java Spring Demo
         working-directory: .
-        run: mvn clean package
+        run: mvn clean package -DskipTests
       
       - name: build image and push to docker hub
         uses: docker/build-push-action@v1.1.0
