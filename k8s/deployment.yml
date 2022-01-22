@@ -21,4 +21,4 @@ spec:
           valueFrom:
             secretKeyRef:
               name: newreliclicensekey
-              key: LICENCE
+              key: password
