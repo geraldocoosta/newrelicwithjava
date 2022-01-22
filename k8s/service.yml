@@ -8,9 +8,3 @@ spec:
   ports:
   - port: 8080
     targetPort: 8080
-  env:
-    - name: NEW_RELIC_LICENSE_KEY
-      valueFrom:
-        secretKeyRef:
-          name: newreliclicensekey
-          key: LICENCE
