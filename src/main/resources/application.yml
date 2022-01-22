@@ -4,6 +4,8 @@ spring:
     
 management:
   metrics:
+    tags:
+      application: ${spring.application.name}
     export:
       newrelic:
         enabled: true
