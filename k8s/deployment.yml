@@ -17,8 +17,13 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: NEW_RELIC_LICENSE_KEY
+        - name: MANAGEMENT.METRICS.EXPORT.NEWRELIC.APIKEY
           valueFrom:
             secretKeyRef:
-              name: newreliclicensekey
-              key: password
+              name: newrelicsecret
+              key: apikey
+        - name: MANAGEMENT.METRICS.EXPORT.NEWRELIC.ACCOUNTID
+          valueFrom:
+            secretKeyRef:
+              name: newrelicsecret
+              key: accountid
