@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: springwithnewrelic
-        image: springboot-newrelic
+        image: springwithnewrelic
         ports:
         - containerPort: 8080
