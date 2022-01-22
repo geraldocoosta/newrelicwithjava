@@ -7,9 +7,6 @@ resources:
 namespace: spring-newrelic
 
 images:
-- name: goapp
-  newName: geraldocoosta/springboot-newrelic
-  newTag: 427e43bba11f8f7f4a8d14ef391fcc45bf0c621f
 - name: springwithnewrelic
   newName: geraldocoosta/springboot-newrelic
   newTag: 612b6aaa87e4eaa2ae2de6d932802b054d45a938
