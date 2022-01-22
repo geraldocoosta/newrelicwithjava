@@ -9,4 +9,4 @@ namespace: spring-newrelic
 images:
 - name: springwithnewrelic
   newName: geraldocoosta/springboot-newrelic
-  newTag: fcd5ed4a6b945da9a328e9a10e61185d0bdcbdda
+  newTag: e21a22e4bc49d5a428811b08bfa713b515d3d033
