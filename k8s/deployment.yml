@@ -17,11 +17,13 @@ spec:
         ports:
         - containerPort: 8080
         env:
+        
         - name: MANAGEMENT.METRICS.EXPORT.NEWRELIC.APIKEY
           valueFrom:
             secretKeyRef:
               name: newrelicsecret
               key: apikey
+
         - name: MANAGEMENT.METRICS.EXPORT.NEWRELIC.ACCOUNTID
           valueFrom:
             secretKeyRef:
