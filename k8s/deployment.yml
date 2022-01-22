@@ -21,12 +21,12 @@ spec:
             memory: "128Mi"
             cpu: "500m"
         env:
-        - name: MANAGEMENT.METRICS.EXPORT.NEWRELIC.APIKEY
+        - name: MANAGEMENT_METRICS_EXPORT_NEWRELIC_APIKEY
           valueFrom:
             secretKeyRef:
               name: newrelicsecret
               key: apikey
-        - name: MANAGEMENT.METRICS.EXPORT.NEWRELIC.ACCOUNTID
+        - name: MANAGEMENT_METRICS_EXPORT_NEWRELIC_ACCOUNTID
           valueFrom:
             secretKeyRef:
               name: newrelicsecret
