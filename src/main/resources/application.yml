@@ -1,3 +1,16 @@
 spring:
   application:
     name: demo
+    
+management:
+  metrics:
+    export:
+      newrelic:
+        enabled: true
+
+        
+logging:
+  level:
+    io:
+      micrometer:
+        newrelic: trace
