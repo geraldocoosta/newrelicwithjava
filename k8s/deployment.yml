@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springwithnewrelic
+spec:
+  selector:
+    matchLabels:
+      app: springwithnewrelic
+  template:
+    metadata:
+      labels:
+        app: springwithnewrelic
+    spec:
+      containers:
+      - name: springwithnewrelic
+        image: geraldocoosta/springboot-newrelic
+        ports:
+        - containerPort: 8080
