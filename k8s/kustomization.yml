@@ -9,4 +9,4 @@ namespace: spring-newrelic
 images:
 - name: goapp
   newName: geraldocoosta/springboot-newrelic
-  newTag: e0a1ccb6960d41f76891b688056075f60e5584b1
+  newTag: c6611efac8525fe5eb738f47a0ad06da116b935c
