@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: springwithnewrelic
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: springwithnewrelic
@@ -20,14 +21,3 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "500m"
-        env:
-        - name: MANAGEMENT_METRICS_EXPORT_NEWRELIC_APIKEY
-          valueFrom:
-            secretKeyRef:
-              name: newrelicsecret
-              key: apikey
-        - name: MANAGEMENT_METRICS_EXPORT_NEWRELIC_ACCOUNTID
-          valueFrom:
-            secretKeyRef:
-              name: newrelicsecret
-              key: accountid
